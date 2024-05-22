@@ -88,8 +88,9 @@ if __name__ == '__main__':
     test_commands_array = np.array(commands, dtype=np.float32)
     test_labels_array = np.array(labels, dtype=float)
     test_labels_categorical = to_categorical(test_labels_array)
-    # Adopt the same alpha vector used while training the MLP model
-     alpha_vec =   [0.23549206036653117, 6.9952997702109885, 3.86836481256859, 5.690627920808905, 5.66943198171506]      
+    #This alpha vector should be the same as the one used during the training phase.
+    #By using the same alpha vector, you ensure that the class weights are applied consistently when calculating the focal loss during testing.
+    alpha_vec =   [0.23549206036653117, 6.9952997702109885, 3.86836481256859, 5.690627920808905, 5.66943198171506]      
     loss = focal_loss(alpha_vec=alpha_vec, gamma=2.0)
     # Load the trained model
     model = load_model(" your trained model name.h5", custom_objects={'focal_loss_fixed': focal_loss(alpha_vec)})  
