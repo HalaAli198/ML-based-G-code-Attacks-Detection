@@ -155,7 +155,7 @@ if __name__ == '__main__':
     print("Class Counts"+str(counts))
     print("Class Weights"+str(class_weight))
     
-    # Define the architecture of the Cost Sensitive Bi-LSTM model
+    # Identify the architecture of the Cost Sensitive Bi-LSTM model
     model = Sequential()
     model.add(Bidirectional(LSTM(256, input_shape=(max_length, length_row), return_sequences=True))) 
     model.add(Dropout(0.3))   
