@@ -1,0 +1,59 @@
+1 Physical GPUs, 1 Logical GPUs
+Layer-level Accuracy:  0.8154872580115936
+Layer-level F1 Macro Score:  0.7589768897183815
+Layer-level Confusion Matrix:
+
+Claases :
+0: Benign         1: Cavity       2: Filament Speed      3: Filament State           4: Fan Speed         5: Bed Temperature       6: Nozzle Temperature     7: Z-Profile
+
+------------------------------------
+ Macro Layer-level Accuracy:  0.8154872580115936
+Macro Layer-level Precision:  0.7895746587819096
+Macro Layer-level Recall:  0.7696951020368938
+Macro Layer-level F1 Score:  0.7589768897183815
+[[6350    2    0    0    3    0   11 1219]
+ [   0  179    0    0    0    0    2    0]
+ [   0   30  141    1    0    0   17    0]
+ [  55    0   23  124    0    0   36    0]
+ [   1    0    0    0  157   18    1    5]
+ [   0    0    0    0    0  255    0    0]
+ [   0    0    0    0    1    6  161    3]
+ [ 253    0    0    0    0    0    0   89]]
+Layer-level Per-Class Accuracy:  {0: 0.8371786420566908, 1: 0.988950276243094, 2: 0.746031746031746, 3: 0.5210084033613446, 4: 0.8626373626373627, 5: 1.0, 6: 0.9415204678362573, 7: 0.260233918128655}
+Layer-level Per-Class Precision:  [0.9535966361315513, 0.8483412322274881, 0.8597560975609756, 0.992, 0.9751552795031055, 0.9139784946236559, 0.706140350877193, 0.067629179331307]
+Layer-level Per-Class Recall:  [0.8371786420566908, 0.988950276243094, 0.746031746031746, 0.5210084033613446, 0.8626373626373627, 1.0, 0.9415204678362573, 0.260233918128655]
+Layer-level Per-Class F1 Score:  [0.8916034821679303, 0.913265306122449, 0.7988668555240793, 0.6831955922865014, 0.9154518950437318, 0.9550561797752808, 0.8070175438596491, 0.10735826296743063]
+******************************************************************************************************************************
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ bidirectional (Bidirection  (None, 9799, 512)         550912    
+ al)                                                             
+                                                                 
+ dropout (Dropout)           (None, 9799, 512)         0         
+                                                                 
+ bidirectional_1 (Bidirecti  (None, 9799, 256)         656384    
+ onal)                                                           
+                                                                 
+ dropout_1 (Dropout)         (None, 9799, 256)         0         
+                                                                 
+ bidirectional_2 (Bidirecti  (None, 9799, 256)         394240    
+ onal)                                                           
+                                                                 
+ dropout_2 (Dropout)         (None, 9799, 256)         0         
+                                                                 
+ bidirectional_3 (Bidirecti  (None, 9799, 256)         394240    
+ onal)                                                           
+                                                                 
+ dropout_3 (Dropout)         (None, 9799, 256)         0         
+                                                                 
+ attention_layer (Attention  (None, 256)               65536     
+ Layer)                                                          
+                                                                 
+ dense (Dense)               (None, 8)                 2056      
+                                                                 
+=================================================================
+Total params: 2063368 (7.87 MB)
+Trainable params: 2063368 (7.87 MB)
+Non-trainable params: 0 (0.00 Byte)
