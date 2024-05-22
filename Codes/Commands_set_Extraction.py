@@ -1,7 +1,7 @@
 
 import pandas as pd
 import os
-# This script is used to extract  a subset of commands from each layer.
+# This script is used to extract  a subset of commands from each layer after labeling them (Commands_Labeling.py).
 # Extract the commands within the same layer that have identical values for the feautrs:
 # Nozzle Temperature, Bed Temperature, Fan Speed, Layer Thickness, Z Value, Layer Number, and Layer Indicator.
 
