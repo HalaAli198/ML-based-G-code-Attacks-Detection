@@ -14,6 +14,9 @@ The repository includes:
 - `Datasets`: Contains raw STL files and G-code files, datasets of benign and malicious layers and commands.
 - `Code`:  scripts for feature extraction, labeling layers and commands, filtering commands, and training/testing models including LSTM, Bi-GRU, and Bi-LSTM. It also includes code for MLP and RF algorithms for command classification.
 
+## Datasets
+You can access all datasets via the following link : https://drive.google.com/drive/folders/1qVCudr4VzbePjZfaaBd_3R3aBNiqB2NO?usp=drive_link
+
 #### Install the Environment
 ```bash
 # Using Pyothn:
