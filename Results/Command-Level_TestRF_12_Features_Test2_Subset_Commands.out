@@ -1,0 +1,41 @@
+1 Physical GPUs, 1 Logical GPUs
+Class Weights:
+Class 0.0: 0.23637533226613824
+Class 1.0: 6.7996809528873765
+Class 2.0: 3.860487863784567
+Class 3.0: 5.599702224557716
+Class 4.0: 5.412460848218065
+Overall Test Accuracy: 0.9712785144685051
+Overall Test Precision: 0.9558794394613812
+Overall Test Recall: 0.8906870024536812
+Overall Test F1-Score: 0.9193430708364353
+
+ #Class 0: Benign, Class 1: Fan Speed, Class2: Bed Temperature, Class 3: Nozzle Temperature, Class 4: Z-Profile
+
+
+Class-wise Metrics:
+Class 0:
+Precision: 0.9736447028167431
+Recall: 0.9937828660919812
+F1-Score: 0.9836107195114617
+
+Class 1:
+Precision: 0.9569156804733728
+Recall: 0.9146341463414634
+F1-Score: 0.9352973070666908
+
+
+Class 2:
+Precision: 0.9900217474734553
+Recall: 0.9966516419832582
+F1-Score: 0.9933256321396483
+
+Class 3:
+Precision: 0.9032047089601046
+Recall: 0.8366316639741519
+F1-Score: 0.8686445120033547
+
+Class 4:
+Precision: 0.9556103575832305
+Recall: 0.7117346938775511
+F1-Score: 0.8158371834610212
