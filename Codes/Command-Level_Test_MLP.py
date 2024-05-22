@@ -29,7 +29,7 @@ def focal_loss(alpha_vec, gamma=2.0):
 
         return tf.reduce_sum(loss, axis=-1)
     return focal_loss_fixed
-# Calcualte the evaluationmetrics averaged across all classes (macro-averaging), as our dataset is imbalanced.
+# Calcualte the evaluatio nmetrics averaged across all classes (macro-averaging), as our dataset is imbalanced.
 def calculate_metrics(y_true, y_pred, average_type='macro'):
     accuracy = accuracy_score(y_true, y_pred)
     precision = precision_score(y_true, y_pred, average=average_type, labels=np.unique(y_true))
