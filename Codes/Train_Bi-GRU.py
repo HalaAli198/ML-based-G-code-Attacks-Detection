@@ -175,7 +175,7 @@ if __name__ == '__main__':
     train_labels_categorical = to_categorical(train_labels_array)
     
     
-    # Define the architecture of the Bi-GRU model
+    # Identify the architecture of the Bi-GRU model
     model = Sequential()
     model.add(Bidirectional(GRU(256, input_shape=(max_length, length_row), return_sequences=True))) 
     model.add(Dropout(0.3))  
