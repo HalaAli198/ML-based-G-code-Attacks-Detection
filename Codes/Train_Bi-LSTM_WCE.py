@@ -177,7 +177,7 @@ if __name__ == '__main__':
     train_labels = [t[1] for t in sequence_label]
     train_labels_array = np.array(train_labels,float)
     train_labels_categorical = to_categorical(train_labels_array)
-    # Define the architecture of the Bi-LSTM model
+    # Identify the architecture of the Bi-LSTM model
     model = Sequential()
     model.add(Bidirectional(LSTM(256, input_shape=(max_length, length_row), return_sequences=True))) 
     model.add(Dropout(0.3))   
