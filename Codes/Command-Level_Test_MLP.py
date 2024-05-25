@@ -5,6 +5,8 @@ from keras.utils import to_categorical
 from sklearn.metrics import classification_report
 from sklearn.metrics import accuracy_score, confusion_matrix,f1_score, precision_score, recall_score, roc_auc_score  
 import csv
+# Use the following commands if you run your code on CPU.
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 # Use these commands if you run your code on GPU. 
 gpus = tf.config.experimental.list_physical_devices('GPU')
 if gpus:
