@@ -20,6 +20,8 @@ import glob
 import random
 from keras.optimizers import Adam
 from keras.optimizers import Nadam
+# Use the following commands if you run your code on CPU.
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 #These command to run your code on GPU
 gpus = tf.config.experimental.list_physical_devices('GPU')
 if gpus:
@@ -108,7 +110,7 @@ if __name__ == '__main__':
              count_fan+=1
         elif "bed_temperature" in filename and "malicious" in filename:
              count_bed+=1            
-        elif "extruder_temperature" in filename and  "malicious" in filename:
+        elif "nozzle_temperature" in filename and  "malicious" in filename:
             count_ext+=1              
         elif "Z_profile" in filename  and  "malicious" in filename:
              count_layer+=1
@@ -124,7 +126,7 @@ if __name__ == '__main__':
         elif "bed_temperature" in filename:
              train_labels_dic[filename] =2 
              train_file_label.append((filename, 2))        
-        elif "extruder_temperature" in filename:  
+        elif "nozzle_temperature" in filename:  
              train_labels_dic[filename] =3 
              train_file_label.append((filename, 3))
         elif "Z_profile" in filename: 
