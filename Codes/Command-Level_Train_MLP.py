@@ -11,6 +11,8 @@ import os
 import random
 from keras.optimizers import Adam
 from keras.optimizers import Nadam
+# Use the following commands if you run your code on CPU.
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 # Use the following commands if you run your code on GPU. 
 gpus = tf.config.experimental.list_physical_devices('GPU')
 if gpus:
