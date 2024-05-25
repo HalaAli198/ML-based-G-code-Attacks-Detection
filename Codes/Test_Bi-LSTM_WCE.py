@@ -10,7 +10,8 @@ from collections import Counter, defaultdict
 from sklearn.metrics import accuracy_score, confusion_matrix,f1_score, precision_score, recall_score, roc_auc_score  
 import re
 
-
+# Use the following commands if you run your code on CPU.
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 #These command to run your code on GPU
 gpus = tf.config.experimental.list_physical_devices('GPU')
@@ -119,7 +120,7 @@ def get_actual_class(filename):
         return 4
     elif "bed_temperature" in filename and "malicious" in filename:
         return 5
-    elif "extruder_temperature" in filename and "malicious" in filename:
+    elif "nozzle_temperature" in filename and "malicious" in filename:
         return 6
     elif "Z_profile" in filename  and  "malicious" in filename:
         
