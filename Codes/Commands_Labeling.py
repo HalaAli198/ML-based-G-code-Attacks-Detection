@@ -16,7 +16,7 @@ for filename in os.listdir(folder_path):
             label_value = 1
         elif "bed_temperature" in filename and "malicious" in filename:
             label_value = 2 
-        elif "extruder_temperature" in filename and  "malicious" in filename:
+        elif "nozzle_temperature" in filename and  "malicious" in filename:
             label_value = 3
         elif "Z_profile" in filename  and  "malicious" in filename:
             label_value = 4
