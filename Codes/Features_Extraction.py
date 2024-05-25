@@ -10,6 +10,7 @@ from collections import Counter
 # This code can run on a CPU. It is designed to extract 14 features representing each command, including the command index and command indicator.
 # To extract the main 12 features, exclude the variables (command_num, F_I_L) from the command_vector list.
 # For experiments to find the optimal feature set, you can exclude any of the variables (z_v, layer_thickness, layer_number, layer_indicator).
+#In this code: Extruder temperature means the nozzle temperature
 if __name__ == '__main__':   
     # Directory paths for G-code input and output csv layers.
     input = 'path to your G-code files'
@@ -305,7 +306,7 @@ if __name__ == '__main__':
                     else:
                       Layer_Commands.append(line)
             
-        
+                # Extruder_temp is: nozzle temperature
                 features_names = ['Command_Type', 'Command_number','Angle','Distance','Filament','Extruder_temp','Bed_Temp','Fan_speed','Z_v','Layer_thickness','Command_index','Command_Indicator','layer_number','Layer_indicator']
                 
                 for i, sub_seq in enumerate(command_vectors_sequence):   
