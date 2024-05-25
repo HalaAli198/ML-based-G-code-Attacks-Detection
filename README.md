@@ -12,7 +12,7 @@ This project aims to detect various types of G-Code attacks in 3D printing, such
 
 The repository includes:
 - `Datasets`: Contains raw STL files and G-code files, datasets of benign and malicious layers and commands.
-- `Code`:  scripts for feature extraction, labeling layers and commands, filtering commands, and training/testing models including LSTM, Bi-GRU, and Bi-LSTM. It also includes code for MLP and RF algorithms for command classification.
+- `Code`:  scripts for extracting features, labeling layers and commands, filtering commands, and training/testing models including LSTM, Bi-GRU, and Bi-LSTM. It also includes code for MLP and RF algorithms for command classification.
 
 ## Datasets
 You can access all datasets via the following link : https://drive.google.com/file/d/1V8wD-Ykb8vqT54I8ZtI_hcf70CR3yjXv/view?usp=sharing
@@ -51,5 +51,5 @@ conda install scikit-learn keras pandas
 # Verify that TensorFlow can access the GPU
 python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
 
-#Note: Make sure to check the compatibility between TensorFlow and CUDA.
+#Note:  Ensure that both TensorFlow and CUDA versions are compatible.
 
