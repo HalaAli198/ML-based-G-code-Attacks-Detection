@@ -15,7 +15,7 @@ The repository includes:
 - `Code`:  scripts for extracting features, labeling layers and commands, filtering commands, and training/testing models including LSTM, Bi-GRU, and Bi-LSTM. It also includes code for MLP and RF algorithms for command classification.
 
 ## Datasets
-You can access all datasets via the following link : https://drive.google.com/file/d/1V8wD-Ykb8vqT54I8ZtI_hcf70CR3yjXv/view?usp=sharing
+You can access all datasets via the following link: https://drive.google.com/drive/folders/1n_4VhXoVnbwdvAuZdiioV_Eq16w2bT9O?usp=sharing
 
 ### File Name Structure
 **-The main strcuture (Benign File)**: Design Name _X(dimention)_Y(dimention)_Z(height)_T(#top layers)_B(#buttom layers)_W(#walls)_L(layer thickness)_Infill Pattern_DS(infill density)_D(infill direction)_Layer Number within the file.csv
