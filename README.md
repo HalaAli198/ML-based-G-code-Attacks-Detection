@@ -1,7 +1,7 @@
 # ML-based-G-Code-Attacks-Detection
 This repository is associated with the manuscript:
 
-**Proactive Detection of G-Code Attacks in 3D Printing using Machine Learning: A Comprehensive Analysis**
+**G-Scanner: A Machine Learning-based Detection of G-Code Attacks in 3D Printing**
 
 ## Description
 
