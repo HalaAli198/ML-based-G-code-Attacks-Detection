@@ -1,6 +1,6 @@
 # Filament Attack Automation Scripts
 
-This folder contains a collection of Python scripts designed to automate the implementation of various filament attacks on G-code files. Manually performing these attacks can be complex and error-prone, hence the development of these scripts.
+This folder contains a collection of Python scripts designed to automate the implementation of various filament attacks on G-code files. Manually performing these attacks can be complex and error-prone, hence these scripts provide a streamlined, automated approach.
 
 ## Scripts and Their Functions
 
