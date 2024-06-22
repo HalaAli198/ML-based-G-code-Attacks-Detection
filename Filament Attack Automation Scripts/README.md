@@ -12,6 +12,7 @@ This folder contains a collection of Python scripts designed to automate the imp
 ### Filament Speed Attack
 - **filament_speed_attack.py** is designed to adjust the filament density at target commands and compensate accordingly in other areas of the G-code file. This script showcases one method of implementing such attacks.
 - Other variants could include increasing the density at specific commands while reducing it elsewhere or varying the methods of compensating for density changes.
+- This script can be modified to implement different variants of this attack with minimal coding effort.
 - This script includes print statements that provide a numerical illustration of how filament density modifications are applied and compensated, offering clarity and insight into the internal workings and impacts of the attack.
 
 ### Filament State Attack
