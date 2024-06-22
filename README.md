@@ -12,7 +12,7 @@ This project aims to detect various types of G-Code attacks in 3D printing, such
 
 The repository includes:
 - `Datasets`: Contains raw STL files and G-code files, datasets of benign and malicious layers and commands.
-- `Code`:  scripts for extracting features, labeling layers and commands, filtering commands, and training/testing models including LSTM, Bi-GRU, and Bi-LSTM. It also includes code for MLP and RF algorithms for command classification. It also includes filament attack automation scripts.
+- `Code`:  scripts for extracting features, labeling layers and commands, filtering commands, and training/testing models including LSTM, Bi-GRU, and Bi-LSTM. It also includes code for MLP and RF algorithms for command classification. Moreover, this  repository includes filament attack automation scripts.
 
 ## Datasets
 You can access all datasets via the following link: https://drive.google.com/drive/folders/1n_4VhXoVnbwdvAuZdiioV_Eq16w2bT9O?usp=sharing
