@@ -1,7 +1,5 @@
 # ML-based-G-Code-Attacks-Detection
-This repository is associated with the manuscript:
-
-**G-Scanner: A Machine Learning-based Detection of G-Code Attacks in 3D Printing**
+This repository is associated with our manuscript (under review)
 
 ## Description
 
