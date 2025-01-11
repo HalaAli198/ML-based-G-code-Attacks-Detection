@@ -1,1 +1,191 @@
+Loading training data...
+Training data shape: (319687, 12)
+
+--------------Train----------------
+label: 0.0, count: 270491
+label: 1.0, count: 9403
+label: 2.0, count: 16562
+label: 3.0, count: 11418
+label: 4.0, count: 11813
+
+Class Weights:
+Class 0.0: 0.23637533226613824
+Class 1.0: 6.7996809528873765
+Class 2.0: 3.860487863784567
+Class 3.0: 5.599702224557716
+Class 4.0: 5.412460848218065
+
+Preparing learning curve data...
+Using all 319687 examples for learning curve
+
+Calculating learning curve values...
+
+Learning Curve Values:
+N Samples  Train Score          Train Std       CV Score             CV Std         
+--------------------------------------------------------------------------------
+332        0.9182 ± 0.0160      0.5993 ± 0.0473
+528        0.9264 ± 0.0362      0.6777 ± 0.0336
+838        0.9466 ± 0.0168      0.7309 ± 0.0324
+1330       0.9520 ± 0.0098      0.7850 ± 0.0372
+2110       0.9578 ± 0.0135      0.8215 ± 0.0099
+3348       0.9691 ± 0.0051      0.8447 ± 0.0058
+5312       0.9703 ± 0.0093      0.8628 ± 0.0086
+8427       0.9723 ± 0.0063      0.8780 ± 0.0085
+13370      0.9737 ± 0.0053      0.8935 ± 0.0076
+21211      0.9740 ± 0.0027      0.9100 ± 0.0058
+33649      0.9734 ± 0.0034      0.9172 ± 0.0052
+53382      0.9707 ± 0.0003      0.9203 ± 0.0017
+84685      0.9706 ± 0.0034      0.9270 ± 0.0038
+134344     0.9685 ± 0.0042      0.9259 ± 0.0041
+213123     0.9656 ± 0.0071      0.9253 ± 0.0059
+
+Training Random Forest on full dataset...
+
+Loading and evaluating on test set...
+Test data shape: (176314, 12)
+
+--------------Test----------------
+label: 0.0, count: 148139
+label: 1.0, count: 5658
+label: 2.0, count: 7765
+label: 3.0, count: 4952
+label: 4.0, count: 9800
+
+Calculating metrics...
+
+Overall Test Metrics:
+Accuracy: 0.9673
+Precision (macro): 0.9305
+Recall (macro): 0.8886
+F1 (macro): 0.9069
+
+************************************************************
+Confusion Matrix:
+[[146503    255     57    817    507]
+ [   432   5154      1     26     45]
+ [     9      1   7748      4      3]
+ [   841     10      4   4081     16]
+ [  2626      8      0    100   7066]]
+
+************************************************************
+Class-wise Metrics:
+
+Class 0:
+  Precision: 0.9740
+  Recall:    0.9890
+  F1-Score:  0.9814
+------------------------------------------------------------
+
+Class 1:
+  Precision: 0.9495
+  Recall:    0.9109
+  F1-Score:  0.9298
+------------------------------------------------------------
+
+Class 2:
+  Precision: 0.9921
+  Recall:    0.9978
+  F1-Score:  0.9949
+------------------------------------------------------------
+
+Class 3:
+  Precision: 0.8117
+  Recall:    0.8241
+  F1-Score:  0.8178
+------------------------------------------------------------
+
+Class 4:
+  Precision: 0.9252
+  Recall:    0.7210
+  F1-Score:  0.8105
+------------------------------------------------------------
+
+Calculating AUC scores...
+
+Multiclass AUC Scores:
+  Class 0: 0.9751
+  Class 1: 0.9904
+  Class 2: 1.0000
+  Class 3: 0.9942
+  Class 4: 0.9537
+
+Analysis complete!
+
+Analyzing Feature Importance...
+
+Overall Feature Importance:
+Sb      : 0.2410
+Sf      : 0.1921
+Zv      : 0.1682
+Sn      : 0.1494
+Ln      : 0.0672
+Lth     : 0.0620
+deltaE  : 0.0319
+Theta   : 0.0299
+Lin     : 0.0279
+d       : 0.0184
+Cn      : 0.0081
+Ct      : 0.0038
+
+Per-Class Feature Importance:
+
+Class 0 (One-vs-Rest) Feature Importance:
+Sb      : 0.2927
+Zv      : 0.2137
+Sn      : 0.1675
+Sf      : 0.0746
+Lth     : 0.0649
+Ln      : 0.0561
+Lin     : 0.0377
+deltaE  : 0.0321
+Theta   : 0.0301
+d       : 0.0182
+
+Class 1 (One-vs-Rest) Feature Importance:
+Sf      : 0.3843
+Lin     : 0.1765
+Ln      : 0.1607
+Lth     : 0.1477
+Sb      : 0.0310
+Cn      : 0.0176
+Zv      : 0.0174
+deltaE  : 0.0171
+Theta   : 0.0156
+Sn      : 0.0133
+d       : 0.0114
+
+Class 2 (One-vs-Rest) Feature Importance:
+Sb      : 0.7989
+Sf      : 0.0440
+Lth     : 0.0281
+Zv      : 0.0250
+Ct      : 0.0225
+Cn      : 0.0204
+Ln      : 0.0143
+deltaE  : 0.0139
+
+Class 3 (One-vs-Rest) Feature Importance:
+Sn      : 0.5568
+deltaE  : 0.0760
+Theta   : 0.0730
+Zv      : 0.0656
+Lth     : 0.0557
+Ln      : 0.0553
+d       : 0.0339
+Lin     : 0.0252
+Cn      : 0.0194
+Ct      : 0.0193
+Sf      : 0.0148
+
+Class 4 (One-vs-Rest) Feature Importance:
+Zv      : 0.5462
+Lth     : 0.1065
+deltaE  : 0.0638
+Sb      : 0.0623
+Theta   : 0.0547
+Sn      : 0.0448
+d       : 0.0383
+Ln      : 0.0381
+Sf      : 0.0225
+Cn      : 0.0127
 
